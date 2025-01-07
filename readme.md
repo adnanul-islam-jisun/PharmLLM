@@ -19,20 +19,25 @@ PharmLLM/
 
 1. **Clone the Repository**
    ```bash
-   git clone <https://github.com/adnanul-islam-jisun/PharmLLM>
-   cd <PharmLLM>
+   git clone https://github.com/adnanul-islam-jisun/PharmLLM
+   cd PharmLLM
    ```
 
-2. **Create the Directory Tree**
+2. **Download the Dataset**
+   Visit [FDA Open Data Downloads](https://open.fda.gov/data/downloads/) to download the required dataset.
+   - Extract the ZIP file after downloading.
+   - Place the `.json` files (e.g., `drug-label-0001-of-0012.json`, `drug-label-0002-of-0012.json`) inside the `dataset/raw/` directory.
+
+3. **Create the Directory Tree**
    Run the following commands to set up the required directories:
    ```bash
    mkdir -p dataset/raw
    ```
 
-3. **Add JSON Files**
-   Place your JSON files (e.g., `drug-label-0001-of-0012.json`, `drug-label-0002-of-0012.json`) inside the `dataset/raw/` directory.
+4. **Add JSON Files**
+   Place your extracted JSON files inside the `dataset/raw/` directory.
 
-4. **Verify the Structure**
+5. **Verify the Structure**
    Use the `tree` command or manually check to ensure the directory structure matches:
    ```bash
    tree
@@ -47,6 +52,7 @@ PharmLLM/
    │   │   └── ...
    ├── main.py
    ├── .gitignore
+   ├── readme.md
    ```
 
 ## Running the Script
