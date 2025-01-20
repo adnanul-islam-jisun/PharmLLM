@@ -28,7 +28,8 @@ cleaned_data = []
 for entry in structured_data:
     if entry["response_text"].startswith("6 ADVERSE REACTIONS"):
         entry["response_text"] = entry["response_text"].replace("6 ADVERSE REACTIONS", "ADVERSE REACTIONS", 1)
-    cleaned_data.append(entry)
+    if len(entry["response_text"].split()) >= 10:
+        cleaned_data.append(entry)
 
 
 # Save structured dataset to a JSON file
