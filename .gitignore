@@ -1,3 +1,4 @@
 dataset/
 .conda/
 .json
+kaggle.json
