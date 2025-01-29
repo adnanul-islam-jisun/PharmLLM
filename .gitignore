@@ -3,3 +3,4 @@ dataset/
 .json
 kaggle.json
 .env
+wandb/
