@@ -70,3 +70,5 @@ PharmLLM/
 - Ensure all required JSON files are present in the `dataset/raw/` directory before running the script.
 - If there are any errors, please check that the directory structure and file paths match the setup instructions.
 
+## Contact
+For any queries, please contact us at msayeedi212049@bscse.uiu.ac.bd
